@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <h3>MyTicTacToe</h3>
+    </div>
+    <div class="head">
+        <h1>Welcome to MyTicTacToe</h1>
+    </div>
+    <div id="overText">Game Over!</div>
+    <div class="gamecontainer">
+        <div class="container">
+            <div id="line"></div>
+            <div class="containerBox">
+                <div class="box bto blo"></div>
+                <div class="box bto"></div>
+                <div class="box bto bro"></div>
+                <div class="box blo"></div>
+                <div class="box"></div>
+                <div class="box bro"></div>
+                <div class="box bbo blo"></div>
+                <div class="box bbo"></div>
+                <div class="box bbo bro"></div>
+            </div>
+        </div>
+        <div class="gameInfo">
+            <div class="info">
+                <span id="turn">Turn for <span id="turnText">x</span></span>
+                <button id="reset">Reset</button>
+            </div>
+            <div>
+                <img src="/excited.gif" alt="" id="gif">
+            </div>
+        </div>
+    </div>
+    <h1 id="winText"></h1>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

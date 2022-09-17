@@ -1,0 +1,20 @@
+        [0,1,2,t7vh,le2vw],
+        [3,4,5,t21,le2],
+        [6,7,8,t36,le2],
+        [0,3,6,t21,r6vw,90],
+        [1,4,7,t21,le2,90],
+        [2,5,8,t21,le10,90],
+        [0,4,8,t22,le2,45],
+        [2,4,6,t22,le2,-45]
+
+
+
+boxes.forEach(()=>{
+        if(((boxes[0].innerText !== "") && (boxes[0].innerText === boxes[1].innerText) && (boxes[1].innerText === boxes[2].innerText)) || ((boxes[0].innerText !== "") && (boxes[0].innerText === boxes[3].innerText) && (boxes[3].innerText === boxes[6].innerText)) || ((boxes[0].innerText !== "") && (boxes[0].innerText === boxes[4].innerText) && (boxes[4].innerText === boxes[8].innerText)) || ((boxes[3].innerText !== "") && (boxes[3].innerText === boxes[4].innerText) && (boxes[4].innerText === boxes[5].innerText)) || ((boxes[6].innerText !== "") && (boxes[6].innerText === boxes[7].innerText) && (boxes[7].innerText === boxes[8].innerText)) || ((boxes[1].innerText !== "") && (boxes[1].innerText === boxes[4].innerText) && (boxes[4].innerText === boxes[7].innerText)) || ((boxes[2].innerText !== "") && (boxes[2].innerText === boxes[5].innerText) && (boxes[5].innerText === boxes[8].innerText)) || ((boxes[2].innerText !== "") && (boxes[2].innerText === boxes[4].innerText) && (boxes[4].innerText === boxes[6].innerText))){
+            gameClick.pause();
+            gameOver.play();
+            gif.style.width = "auto";
+            winText.style.opacity = "1";
+            winText.innerText = "You Won!";
+        }
+    })

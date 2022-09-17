@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    overflow: hidden;
+}
+
+.navbar{
+    background-color: black;
+    height: 8vh;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+ .navbar h3{
+    margin-left: 20px;
+    font-size: 25px;
+ }
+
+ .gamecontainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+ }
+
+ .containerBox{
+    display: grid;
+    grid-template-columns: repeat(3, 8vw);
+    grid-template-rows: repeat(3, 8vw);
+    margin-right: 100px;
+ }
+
+ .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    font-size: 6vw;
+ }
+
+ #turnText{
+    font-size: 50px;
+    color: red;
+ }
+
+ .box:hover{
+    background-color: rgb(243, 193, 193);
+    cursor: pointer;
+ }
+
+.head{
+    text-align: center;
+    margin: 20px;
+    font-size: 30px;
+}
+
+.info{
+    display: block;
+    margin-top: 30px;
+}
+
+.info span{
+    margin-right: 10px;
+}
+
+#turn{
+    display: inline-block;
+    width: 12vw;
+    height: 8vh;
+    font-size: 20px;
+}
+
+#overText{
+    position: absolute;
+    top: 26vh;
+    left: 5vw;
+    color: red;
+    font-size: 30px;
+    visibility: hidden;
+    transition: visibility 0.5s ease-in;
+}
+
+.bto{
+    border-top: 0px;
+}
+.bbo{
+    border-bottom: 0px;
+}
+.blo{
+    border-left: 0px;
+}
+.bro{
+    border-right: 0px;
+}
+
+#reset{
+    padding: 5px 10px;
+    background-color: black;
+    border: 2px solid red;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+#reset:hover{
+    background-color: rgb(244, 14, 14);
+}
+
+#gif{
+    visibility: hidden;
+}
+
+#winText{
+    text-align: center;
+    font-size: 70px;
+    opacity: 0;
+    color: red;
+    transition: opacity .2s ease-in;
+}
+
+#line{
+    background-color: rgb(239, 35, 35);
+    width: 0vw;
+    height: 6px;
+    border-radius: 10px;
+    position: relative;  
+    transition: width 1s ease-in;
+}
+
+@media screen and (max-width: 400px) {
+
+    .head{
+        font-size: 15px;
+    }
+    
+    .gamecontainer{
+        flex-direction: column;
+    }
+
+    .containerBox{
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
+        margin-right: 0px;
+        margin-left: 20vw;
+    }
+
+    .box{
+        font-size: 15vw;
+     }
+
+    #turn{
+        margin-left: 5vw;
+        font-size: 30px;
+    }
+    
+    .gameInfo{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #gif{
+        width: 60vw;
+        height: 30vh;
+    }
+    
+    #winText{
+        font-size: 40px;
+    }
+
+    #line{
+        visibility: hidden;
+    }
+
+    #overText{
+        top: 30vw;
+        left: 30vw;
+        text-align: center;
+    }
+}
