@@ -14,7 +14,7 @@
 
    
 
-[Click here to view live 🚀](https://mybonton.netlify.app/ "Street Style Landing Page")
+[Click here to view live 🚀](https://new-mytictactoe.netlify.app/ "Street Style Landing Page")
 
 ## Screenshot of the Project 👇
 ![](/Screenshot%202022-09-17%20at%2010-33-17%20Tic%20Tac%20Toe.png)
