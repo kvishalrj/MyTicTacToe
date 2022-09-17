@@ -74,8 +74,8 @@
 
 #overText{
     position: absolute;
-    top: 300px;
-    left: 30px;
+    top: 30vh;
+    left: 8vw;
     color: red;
     font-size: 30px;
     visibility: hidden;
@@ -175,8 +175,8 @@
     }
 
     #overText{
-        top: 30vw;
-        left: 30vw;
+        top: 120px;
+        left: 120px;
         text-align: center;
     }
 }
