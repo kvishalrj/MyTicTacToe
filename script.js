@@ -11,8 +11,6 @@ let resetBtn = document.getElementById('reset');
 let winText = document.getElementById('winText');
 let line = document.getElementById('line');
 let gameText = document.getElementById('turn');
-let overText = document.getElementById('overText');
-
 
 // function to check win
 const checkWin = ()=>{
@@ -35,7 +33,6 @@ const checkWin = ()=>{
             gif.style.visibility = "visible";
             winText.style.opacity = "1";
             gameText.style.visibility = "hidden";
-            overText.style.visibility = "visible";
             winText.innerText = "You Won!";
         }
     })
@@ -51,7 +48,6 @@ resetBtn.addEventListener('click', ()=>{
         winText.style.opacity = "0";
         gameOver.pause();
         line.style.width = "0vw";
-        overText.style.visibility = "hidden";
         gameText.style.visibility = "visible";
     })
 })
