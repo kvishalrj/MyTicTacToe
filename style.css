@@ -72,16 +72,6 @@
     font-size: 20px;
 }
 
-#overText{
-    position: absolute;
-    top: 30vh;
-    left: 8vw;
-    color: red;
-    font-size: 30px;
-    visibility: hidden;
-    transition: visibility 0.5s ease-in;
-}
-
 .bto{
     border-top: 0px;
 }
@@ -172,11 +162,5 @@
 
     #line{
         visibility: hidden;
-    }
-
-    #overText{
-        top: 120px;
-        left: 120px;
-        text-align: center;
     }
 }
