@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded',()=>{
+
 // variable initialization
 let turn = "x";
 let boxes = Array.from(document.getElementsByClassName('box'));
@@ -75,4 +77,6 @@ boxes.forEach((element)=>{
             infoText.innerText = turn;
         }
     })
+})
+    
 })
